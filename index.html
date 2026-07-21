@@ -1,58 +1,48 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-
-<meta charset="UTF-8">
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>RHK Login</title>
-
-<link rel="stylesheet" href="css/style.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RHK</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-
 <body>
 
-<div class="container">
+  <!-- Splash Screen -->
+  <div id="splash-screen">
+    <div class="splash-logo">RHK</div>
+    <div class="splash-sub">from Real Community</div>
+  </div>
 
-<div class="language">
-English (UK)
-</div>
+  <!-- Main App Container -->
+  <div id="app" class="hidden">
+    <!-- Top Navigation Header -->
+    <header id="main-header">
+      <h2 class="brand-logo">RHK</h2>
+      <div class="header-icons">
+        <i class="fa-regular fa-square-plus" id="btn-create-post" title="Create Post"></i>
+        <i class="fa-regular fa-heart" id="btn-notifications" title="Notifications"></i>
+        <i class="fa-regular fa-paper-plane" id="btn-messages" title="Messages"></i>
+      </div>
+    </header>
 
-<img src="images/rhk-logo.png" class="logo">
+    <!-- Content Views Container -->
+    <main id="content-container">
+      <!-- Dynamic Views injected via app.js -->
+    </main>
 
-<h2>RHK</h2>
+    <!-- Bottom Navigation Bar -->
+    <nav id="bottom-nav">
+      <button data-target="home" class="nav-btn active"><i class="fa-solid fa-house"></i></button>
+      <button data-target="search" class="nav-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+      <button data-target="reels" class="nav-btn"><i class="fa-solid fa-clapperboard"></i></button>
+      <button data-target="activity" class="nav-btn"><i class="fa-regular fa-heart"></i></button>
+      <button data-target="profile" class="nav-btn profile-nav-thumb"><img id="nav-user-avatar" src="" alt="Profile"></button>
+    </nav>
+  </div>
 
-<input
-type="email"
-id="email"
-placeholder="Email Address">
-
-<input
-type="password"
-id="password"
-placeholder="Password">
-
-<button id="loginBtn">
-
-Log In
-
-</button>
-
-<button class="create"
-
-onclick="location.href='create-account.html'">
-
-Create New Account
-
-</button>
-
-</div>
-
-<script type="module" src="js/login.js"></script>
-
+  <script type="module" src="app.js"></script>
 </body>
-
 </html>
+
