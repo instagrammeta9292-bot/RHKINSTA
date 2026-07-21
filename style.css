@@ -16,7 +16,6 @@ body {
 
 .hidden { display: none !important; }
 
-/* Splash Screen */
 #splash-screen {
   position: fixed;
   top: 0; left: 0; width: 100%; height: 100%;
@@ -43,7 +42,6 @@ body {
   letter-spacing: 1px;
 }
 
-/* App Container (Mobile viewport frame layout) */
 #app {
   width: 100%;
   max-width: 480px;
@@ -57,7 +55,6 @@ body {
   overflow: hidden;
 }
 
-/* Header */
 #main-header {
   height: 54px;
   display: flex;
@@ -79,7 +76,6 @@ body {
   cursor: pointer;
 }
 
-/* Main Content Area */
 #content-container {
   flex: 1;
   overflow-y: auto;
@@ -87,7 +83,6 @@ body {
   padding-bottom: 60px;
 }
 
-/* Bottom Nav */
 #bottom-nav {
   height: 50px;
   background: #ffffff;
@@ -120,7 +115,6 @@ body {
   border: 1px solid #dbdbdb;
 }
 
-/* Stories Bar */
 .stories-container {
   display: flex;
   padding: 10px 0;
@@ -164,7 +158,6 @@ body {
   color: #262626;
 }
 
-/* Post Cards */
 .post-card {
   background: #ffffff;
   margin-bottom: 12px;
@@ -235,7 +228,6 @@ body {
   margin-right: 6px;
 }
 
-/* Profile View */
 .profile-header-section {
   background: #ffffff;
   padding: 16px;
@@ -276,7 +268,6 @@ body {
 .profile-bio-text {
   font-size: 0.85rem;
   margin-top: 4px;
-  white-space: pre-line;
 }
 .profile-action-btns {
   display: flex;
@@ -298,7 +289,6 @@ body {
   color: #ffffff;
 }
 
-/* Profile Grid Tabs */
 .profile-tabs {
   display: flex;
   justify-content: space-around;
@@ -331,7 +321,6 @@ body {
   object-fit: cover;
 }
 
-/* Search View */
 .search-bar-container {
   padding: 10px 16px;
   background: #ffffff;
@@ -382,16 +371,3 @@ body {
   color: #8e8e8e;
 }
 
-/* Chat Inbox / Direct Messages */
-.dm-container {
-  background: #ffffff;
-  height: 100%;
-}
-.dm-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 12px 16px;
-  border-bottom: 1px solid #dbdbdb;
-  font-weight: bold;
-}
