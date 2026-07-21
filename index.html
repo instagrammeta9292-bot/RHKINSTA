@@ -9,7 +9,7 @@
 </head>
 <body>
 
-  <!-- Splash Screen -->
+  <!-- Splash Screen (Auto-dismisses in 1 second guaranteed) -->
   <div id="splash-screen">
     <div class="splash-logo">RHK</div>
     <div class="splash-sub">from Real Community</div>
@@ -17,7 +17,6 @@
 
   <!-- Main App Container -->
   <div id="app" class="hidden">
-    <!-- Top Navigation Header -->
     <header id="main-header">
       <h2 class="brand-logo">RHK</h2>
       <div class="header-icons">
@@ -27,18 +26,16 @@
       </div>
     </header>
 
-    <!-- Content Views Container -->
     <main id="content-container">
-      <!-- Dynamic Views injected via app.js -->
+      <!-- Dynamic views load here -->
     </main>
 
-    <!-- Bottom Navigation Bar -->
     <nav id="bottom-nav">
       <button data-target="home" class="nav-btn active"><i class="fa-solid fa-house"></i></button>
       <button data-target="search" class="nav-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
       <button data-target="reels" class="nav-btn"><i class="fa-solid fa-clapperboard"></i></button>
       <button data-target="activity" class="nav-btn"><i class="fa-regular fa-heart"></i></button>
-      <button data-target="profile" class="nav-btn profile-nav-thumb"><img id="nav-user-avatar" src="" alt="Profile"></button>
+      <button data-target="profile" class="nav-btn profile-nav-thumb"><img id="nav-user-avatar" src="https://via.placeholder.com/150" alt="Profile"></button>
     </nav>
   </div>
 
