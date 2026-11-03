@@ -1,44 +1,35 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>RHK</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Meme Darshan Flying Chase</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Splash Screen (Auto-dismisses in 1 second guaranteed) -->
-  <div id="splash-screen">
-    <div class="splash-logo">RHK</div>
-    <div class="splash-sub">from Real Community</div>
-  </div>
+    <div id="hud">
+        <h2>MEME DARSHAN</h2>
+        <div> SCORE: <span id="score">0</span></div>
+        <div> COINS: <span id="coins">0</span></div>
+    </div>
 
-  <!-- Main App Container -->
-  <div id="app" class="hidden">
-    <header id="main-header">
-      <h2 class="brand-logo">RHK</h2>
-      <div class="header-icons">
-        <i class="fa-regular fa-square-plus" id="btn-create-post" title="Create Post"></i>
-        <i class="fa-regular fa-heart" id="btn-notifications" title="Notifications"></i>
-        <i class="fa-regular fa-paper-plane" id="btn-messages" title="Messages"></i>
-      </div>
-    </header>
+    <div id="startScreen" class="screen">
+        <h1>MEME DARSHAN</h1>
+        <h2>FLYING CHASE 3D</h2>
+        <p>Tap to fly upward!</p>
+        <button id="startBtn">START GAME</button>
+    </div>
 
-    <main id="content-container">
-      <!-- Dynamic views load here -->
-    </main>
+    <div id="gameOver" class="screen hidden">
+        <h1>GAME OVER</h1>
+        <p id="finalScore"></p>
+        <button id="restartBtn">RESTART</button>
+    </div>
 
-    <nav id="bottom-nav">
-      <button data-target="home" class="nav-btn active"><i class="fa-solid fa-house"></i></button>
-      <button data-target="search" class="nav-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
-      <button data-target="reels" class="nav-btn"><i class="fa-solid fa-clapperboard"></i></button>
-      <button data-target="activity" class="nav-btn"><i class="fa-regular fa-heart"></i></button>
-      <button data-target="profile" class="nav-btn profile-nav-thumb"><img id="nav-user-avatar" src="https://via.placeholder.com/150" alt="Profile"></button>
-    </nav>
-  </div>
+    <div id="tapArea"></div>
 
-  <script type="module" src="app.js"></script>
+    <script type="module" src="game.js"></script>
 </body>
 </html>
